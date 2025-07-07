@@ -1,0 +1,85 @@
+/* Block: mainpage */
+.mainpage {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.mainpage__header {
+  padding: 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.mainpage__title {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.mainpage__categories {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-wrap: wrap; /* This will allow the categories to wrap on smaller screens */
+}
+
+/* Block: category (with modifiers) */
+.category {
+  position: relative;
+  width: 30%; /* Default width on larger screens */
+  margin-bottom: 20px;
+}
+/* Elements within the category block */
+.category__image {
+  width: 360px;
+  height: 80vh;
+}
+
+.category__info {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  width: 80%;
+}
+
+.category__title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.category__link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* Responsive design for smaller screens */
+@media only screen and (max-width: 768px) {
+  .mainpage__categories {
+      flex-direction: column; /* Stack the categories vertically */
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  .category {
+      width: 80%; /* Full width on mobile devices, adjust this as needed */
+      margin: 0 auto 20px auto; /* Center the category and add bottom margin */
+  }
+}
+
+.mainpage__logo {
+  width: 100px; /* Adjust width as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the logo */
+}
+

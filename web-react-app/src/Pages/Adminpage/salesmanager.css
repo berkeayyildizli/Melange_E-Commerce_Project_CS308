@@ -1,0 +1,80 @@
+/* General Page Layout */
+.salesM-page {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+/* Sidebar Styling */
+.salesM-sidebar {
+    width: 250px;
+    background-color: #28a745; /* A green color for the Sales Manager theme */
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.salesM-sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.salesM-button {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: white;
+    background-color: #218838; /* A darker green for buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.salesM-button:hover {
+    background-color: #19692c; /* Even darker green for hover */
+}
+
+/* Content Styling */
+.salesM-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: white;
+    border-left: 1px solid #ddd;
+}
+
+.salesM-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.salesM-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.salesM-section p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Button Group Styling for Main Content */
+.salesM-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.salesM-button-group .salesM-button {
+    flex: 1;
+    text-align: center;
+}

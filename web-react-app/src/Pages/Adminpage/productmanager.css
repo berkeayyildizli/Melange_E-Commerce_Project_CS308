@@ -1,0 +1,69 @@
+/* General Page Layout */
+.productM-page {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+  }
+  
+  /* Sidebar Styling */
+  .productM-sidebar {
+    width: 250px;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .productM-sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .productM-button {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: white;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .productM-button:hover {
+    background-color: #003f7f;
+  }
+  
+  /* Content Styling */
+  .productM-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: white;
+    border-left: 1px solid #ddd;
+  }
+  
+  .productM-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .productM-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .productM-section p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+  }
+  

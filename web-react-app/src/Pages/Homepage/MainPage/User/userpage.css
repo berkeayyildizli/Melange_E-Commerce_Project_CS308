@@ -1,0 +1,339 @@
+/* General container for the tabs/buttons at the top */
+.account-tabs {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for each tab button */
+.account-tabs button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ddd;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect for tab buttons */
+.account-tabs button:hover {
+  background-color: #bbb;
+  color: white;
+}
+
+/* Active tab styling */
+.account-tabs button.active {
+  background-color: #333;
+  color: white;
+}
+
+/* Styling for the main container */
+.account-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.account-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.account-content {
+  width: 100%;
+  max-width: 800px; /* Center the content and limit its width */
+  margin: 0 auto;
+}
+
+/* Orders container */
+.account-past-orders {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Feedback message styling */
+.account-feedback-message {
+  color: green;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Order list styling */
+.account-order-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Individual order styling */
+.account-order {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+/* Order group header */
+.account-order-group h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Item list styling */
+.account-item-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Individual item styling */
+.account-item {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Item details */
+.account-item-details {
+  flex: 1;
+  margin-right: 15px;
+}
+
+/* Action buttons */
+.account-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Buttons styling */
+.account-comment-button,
+.account-rate-button,
+.account-refund-button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%; /* Ensure buttons are the same width */
+}
+
+.account-comment-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.account-rate-button {
+  background-color: #ff9800;
+  color: white;
+}
+
+.account-refund-button {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Center the toggle */
+.account-past-orders .refund-toggle {
+  background: #ddd;
+  width: 50px;
+  height: 25px;
+  position: relative;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.account-past-orders .refund-toggle:hover {
+  background: #bbb;
+}
+
+.account-past-orders .refund-toggle span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.account-past-orders .refund-toggle.active {
+  background: #4caf50;
+}
+
+.account-past-orders .refund-toggle.active span {
+  left: calc(100% - 23px);
+}
+
+
+/* Buttons inside comment or rating sections */
+.account-comment-section .action-buttons,
+.account-rating-section .action-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.account-comment-section button,
+.account-rating-section button {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.account-comment-section button:hover,
+.account-rating-section button:hover {
+  opacity: 0.9;
+}
+
+.refund-filters {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.refund-filters button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ddd;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.refund-filters button.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.refund-filters button:hover {
+  background-color: #bbb;
+  color: white;
+}
+
+.account-comments {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.comment-filters {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.comment-filters button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ddd;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.comment-filters button.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.account-comment-list {
+  list-style: none;
+  padding: 0;
+}
+
+.account-comment-item {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.account-error-message {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.success-toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4caf50; /* Green background for success */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-size: 1rem;
+  font-weight: bold;
+  z-index: 1000; /* Ensure it appears above other elements */
+  animation: fadeInOut 4s ease forwards; /* Adds animation */
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px); /* Slide from top */
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px); /* Slide out */
+  }
+}
+
+
+.account-cancel-button {
+  background-color: #f44336; /* Red background */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px; /* Add space below the button */
+  margin-left: 330px;
+}
+
+.account-cancel-button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}

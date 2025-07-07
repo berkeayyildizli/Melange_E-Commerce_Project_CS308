@@ -1,0 +1,71 @@
+import React, { useEffect, useState } from "react"; /**/
+import { useLocation, Link } from "react-router-dom";
+import Navbar from "../MainPage/navbar";
+import LeftSidebar from "../MainPage/leftsidebar";
+import "./CategoryPage.css";
+
+const CategoryPage = () => {
+  const [products, setProducts] = useState([]);
+  const [sortParams, setSortParams] = useState({}); // Sorting state
+  const location = useLocation();
+
+  const categoryGender = new URLSearchParams(location.search).get("category_gender");
+
+  const fetchProducts = async (sorting = {}) => {
+    try {
+      const query = new URLSearchParams({
+        category_gender: categoryGender,
+        sort_by: sorting.sort_by || "price", // Default to sorting by price
+        order: sorting.order || "asc", // Default to ascending order
+      }).toString();
+
+      const response = await fetch(`/sortingMethods/sorting?${query}`);
+      const data = await response.json();
+
+      if (data.status === "success") {
+        setProducts(data.products);
+      } else {
+        console.error("Error fetching products:", data.message);
+      }
+    } catch (error) {
+      console.error("Error fetching products:", error);
+    }
+  };
+
+  // Fetch products on initial render or when category changes
+  useEffect(() => {
+    fetchProducts(sortParams);
+  }, [categoryGender, sortParams]);
+
+  // Handle sort selection from the LeftSidebar
+  const handleSortSelection = (sorting) => {
+    setSortParams(sorting); // Update sorting state
+  };
+
+  return (
+    <div>
+      <Navbar />
+      <div className="category-page">
+        <LeftSidebar onSortSelection={handleSortSelection} />
+        <div className="product-grid">
+          {products.length > 0 ? (
+            products.map((product, index) => (
+              <div key={index} className="product-item">
+                <img src={product.image_url} alt={product.model} className="product-image" />
+                <div className="product-details">
+                  <h4>{product.model}</h4>
+                  <p>${product.price}</p>
+                  <Link to={`/product_page?product_id=${product.product_id}`}>View Details</Link>
+                </div>
+              </div>
+            ))
+          ) : (
+            <p>No products available for this category.</p>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default CategoryPage;

@@ -1,0 +1,90 @@
+/* General container styling */
+.PM_container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Section styling */
+.PM_section {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Heading styles */
+.PM_heading {
+  text-align: center;
+  color: #333;
+}
+
+.PM_section_heading {
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  color: #007bff;
+}
+
+/* Input and select styles */
+.PM_input,
+.PM_select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+/* Button styles */
+.PM_button {
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.PM_color_card button {
+  margin-right: 10px;
+}
+.PM_button_right {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.PM_button_add_color {
+  background: #28a745;
+}
+
+.PM_button_add_size {
+  background: #17a2b8;
+}
+
+.PM_button_remove {
+  background: #ff5454;
+}
+
+.PM_button_create_product {
+  background: #007bff;
+}
+
+.PM_color_card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 10px;
+}
+.PM_color_card button {
+  margin-right: 10px;
+}
+
+.PM_color_heading {
+  color: #007bff;
+}
+
+.PM_error {
+  color: red;
+  text-align: center;
+}

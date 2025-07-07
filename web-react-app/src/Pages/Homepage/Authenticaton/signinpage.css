@@ -1,0 +1,130 @@
+.signin-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Transparent dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .signin-modal-content {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent form */
+    padding: 40px;
+    border-radius: 15px;
+    width: 400px;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s ease;
+  }
+  
+  .sign-near {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .signin-logo {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+  }
+  
+  .signin-title {
+    font-size: 32px;
+    color: #333;
+  }
+  
+  /* Form fade effect */
+  .form-wrapper {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  /* Fade out class */
+  .fade-out {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  /* Fade in class */
+  .fade-in {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .signin-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signin-input {
+    padding: 15px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .signin-button {
+    margin-top: 5px;
+    padding: 15px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .close-button:hover {
+    transform: scale(1.2);
+  }
+  
+  
+  .signin-footer {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .toggle-button {
+    background: none;
+    border: none;
+    color: #667eea;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  /* New styles for registration fields in rows */
+  .input-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .half-width {
+    width: 48%; /* Set each field to half the width for side-by-side alignment */
+  }
+  
+  .full-width {
+    width: 100%; /* Ensures single input fields take full width */
+  }
+  
+  /* Ensure all inputs in .input-row are aligned properly */
+  .input-row .signin-input {
+    margin: 5px 0; /* Adjust margin for fields in the same row */
+  }
+  

@@ -1,0 +1,104 @@
+/* Global Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; /* Light background */
+  color: #333;
+}
+
+/* Link Styles */
+.faq-page a {
+  text-decoration: none;
+  color: #0073e6;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.faq-page a:hover {
+  color: #005bb5;
+  text-decoration: underline;
+}
+
+
+/* Main Page Container */
+.faq-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Header with Centered Logo */
+.faq-header {
+  background: linear-gradient(90deg, #f5f5f5, #ffffff); /* Light gradient */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-bottom: 1px solid #ddd; /* Optional subtle divider */
+}
+
+.faq-logo {
+  height: 60px;
+  cursor: pointer; /* Clickable logo */
+}
+
+/* FAQ Container */
+.faq-container {
+  max-width: 800px; /* Restrict width for readability */
+  margin: 40px auto; /* Center the content horizontally */
+  padding: 0 20px; /* Add horizontal padding only */
+  text-align: left; /* Align text for natural reading */
+}
+
+.faq-container h1 {
+  font-size: 2.5rem; /* Large heading size */
+  text-align: center; /* Center heading */
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* FAQ Items */
+.faq-list {
+  margin: 0;
+  padding: 0;
+}
+
+.faq-item {
+  border: 1px solid #ddd; /* Add border */
+  border-radius: 8px; /* Round the corners */
+  margin-bottom: 10px; /* Add spacing between items */
+  padding: 15px 20px; /* Add padding */
+  background-color: #fff; /* White background for cards */
+  cursor: pointer; /* Pointer to indicate clickability */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.faq-item.open {
+  border-color: #0073e6; /* Highlight border on open */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow */
+}
+
+.faq-question {
+  font-size: 1.5rem; /* Question size */
+  color: #222; /* Darker color */
+  margin: 0;
+}
+
+.faq-answer {
+  overflow: hidden;
+  transition: max-height 0.3s ease; /* Smooth sliding effect */
+}
+
+.faq-answer p {
+  font-size: 1.2rem; /* Answer size */
+  line-height: 1.6; /* Improve readability */
+  margin: 10px 0; /* Space between content */
+  color: #555; /* Slightly lighter text color */
+}
+
+.faq-item:hover {
+  background-color: #f9f9f9; /* Slight hover effect */
+}

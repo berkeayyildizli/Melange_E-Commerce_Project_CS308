@@ -1,0 +1,100 @@
+/* Wrapper for full-page centering */
+.adminlogin-page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3; /* Optional: Background color for the page */
+    margin: 0; /* Remove default body margin */
+  }
+  
+  /* Container */
+  .adminlogin-container {
+    max-width: 400px;
+    width: 100%; /* Ensures responsiveness */
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  .adminlogin-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Form */
+  .adminlogin-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Input Wrapper */
+  .adminlogin-input-group {
+    margin-bottom: 1rem;
+  }
+  
+  /* Labels */
+  .adminlogin-label {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  /* Input Fields */
+  .adminlogin-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .adminlogin-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Error Message */
+  .adminlogin-error {
+    color: red;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* Submit Button */
+  .adminlogin-button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .adminlogin-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  .adminlogin-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .adminlogin-success {
+    color: green;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }

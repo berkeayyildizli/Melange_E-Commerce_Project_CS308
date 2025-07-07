@@ -1,0 +1,191 @@
+.left-sidebar {
+  width: 200px;
+  position: sticky;
+  top: 20px; /* Adjust based on Navbar height */
+  margin-top: 50px; /* Initial offset from the top */
+  left: 2%; /* Position relative to the content container */
+  padding: 20px;
+  background-color: #fff;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.left-sidebar h3 {
+  font-size: 18px; /* Increase font size of the section title */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.left-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Main categories (e.g., PRICE, BEST SELLERS) */
+.left-sidebar li {
+  padding: 10px 0 15px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #1a1a1a;
+  position: relative;
+  border-bottom: 1px solid #ddd; /* Line under main categories */
+}
+
+/* Subcategories (e.g., Lowest to Highest) */
+.price-options {
+  list-style-type: none;
+  padding-left: 0; /* No extra padding */
+  margin: 10px 0;
+  position: relative;
+  border-bottom: 1px solid #ddd; /* Dynamic line below the last subcategory */
+}
+
+/* Individual subcategories */
+.price-options li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align text and checkbox */
+  font-size: 14px; /* Smaller font size */
+  padding: 5px 0; /* Spacing between subcategories */
+  color: #1a1a1a;
+  cursor: pointer;
+  position: relative;
+  border: none; /* No lines between subcategories */
+}
+
+/* Checkbox next to subcategories */
+.price-options li input[type="checkbox"] {
+  margin-left: 10px; /* Space between text and checkbox */
+  cursor: pointer;
+}
+
+/* Hover effect for subcategories */
+.price-options li:hover {
+  color: #007bff; /* Highlight on hover */
+}
+
+/* Remove line for the last item in subcategories */
+.price-options li:last-child {
+  border: none;
+}
+
+/* Remove extra bottom margin for the last subcategory list */
+.price-options:last-of-type {
+  border-bottom: none; /* Remove unnecessary line */
+}
+
+/* Adjust main category hover */
+.left-sidebar li:hover {
+  color: #007bff; /* Optional: Change color on hover */
+}
+
+/* Slider Container */
+.slider-container {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Price Slider */
+.price-slider {
+  width: 100%;
+  margin: 5px 0;
+}
+
+.price-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+}
+
+.price-slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+}
+
+/* Checkbox Styles */
+.left-sidebar ul li label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.left-sidebar ul li label input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.reset-filters-button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #333333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.reset-filters-button:hover {
+  background-color: #1a1a1a;
+}
+
+.navbarcomp_search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%; /* Adjust width as needed */
+  height: 30px;
+  max-width: 400px; /* Optional: limit max width */
+  margin: 0 auto; /* Center the search bar */
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Rounded edges for modern look */
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.navbarcomp_search-bar:hover,
+.navbarcomp_search-bar:focus-within {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add depth on hover or focus */
+}
+
+.navbarcomp_search-bar input {
+  flex: 1;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  background: transparent;
+  outline: none; /* Remove default outline */
+  color: #333; /* Text color */
+}
+
+.navbarcomp_search-bar input::placeholder {
+  color: #aaa; /* Placeholder color */
+  font-style: italic; /* Optional: stylistic choice */
+}
+
+.navbarcomp_search-icon {
+  padding: 10px;
+  font-size: 20px;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbarcomp_search-icon:hover {
+  color: #555; /* Darker color on hover */
+}
